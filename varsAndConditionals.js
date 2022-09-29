@@ -52,15 +52,34 @@ if (coinLandsHeads) {
     console.log("Jon is allowed to run away")
 };
 
-for (let i = 0;i < 5;i++) {
-    jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
-    console.log('Jon\'s health is now ' + jonSnowHealth)
-};
+// for (let i = 0;i < 5;i++) {
+//     jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense)
+//     console.log('Jon\'s health is now ' + jonSnowHealth)
+// };
 
 // Post-lab assignment 1:
 // Write logic in the for loop that detects if Jon's health gets 0 or less, in which case, you will print that Jon is dead
 // and you will stop further loop iterations (see the "break" JS keyword for leaving a loop early)
+// for (let i = 0;i < 11;i++) {
+//     if (jonSnowHealth <= 0) {
+//         console.log("Jon is dead")
+//     } else {
+//         jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense);
+//         console.log('Jon\'s health is now ' + jonSnowHealth)
+//     }
+// } 
+
 
 // Post-lab assignment 2:
 // Write the for loop (including the logic you wrote for the first assignment) as a while loop.
 //  it should behave exactly the same
+let i = 0;
+while (i < 11) {
+    if (jonSnowHealth <= 0) {
+                console.log("Jon is dead")
+     } else {
+                jonSnowHealth -= (jamieLannisterAttack - jonSnowDefense);
+                console.log('Jon\'s health is now ' + jonSnowHealth)
+            };
+            i++
+}
